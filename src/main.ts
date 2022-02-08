@@ -6,9 +6,9 @@ import { INestApplication, ValidationPipe } from '@nestjs/common';
 function setOpenAPI(app: INestApplication) {
   const config = new DocumentBuilder()
     .setTitle('Weather')
-    .setDescription('The MBS API routes')
+    .setDescription('The Weather API routes')
     .setVersion('1.0')
-    .addTag('MBS')
+    .addTag('Weather')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
