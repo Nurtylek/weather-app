@@ -5,7 +5,7 @@ import { INestApplication, ValidationPipe } from '@nestjs/common';
 
 function setOpenAPI(app: INestApplication) {
   const config = new DocumentBuilder()
-    .setTitle('MBS')
+    .setTitle('Weather')
     .setDescription('The MBS API routes')
     .setVersion('1.0')
     .addTag('MBS')
